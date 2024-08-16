@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  color: #ededed;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 40px;
+  /* background: transparent; */
+  background-color: rgb(0, 7, 39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+#logo {
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: cursive;
+  letter-spacing: 0.8px;
+}
+.navbar a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 50px;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+.navbar a:hover {
+  color: #000;
+  background-color: #0ef;
+  border-radius: 25px;
+  box-shadow: 0 0 20px aqua;
+}
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(assets/web-bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.home-content {
+  max-width: 600px;
+  text-transform: capitalize;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+
+}
+.home-content p {
+  font-size: 20px;
+}
+.home-content span {
+  color: #0ef;
+}
+
+.social-handle a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+  color: aqua;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+.social-handle a:hover {
+  background: aqua;
+  color: black;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 20px aqua;
+}
+
+.share-info a {
+  font-size: 15px;
+  color:#000;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-right: 10px;
+  background-color: #0ef;
+  border-radius: 50px;
+}
+.share-info a:hover {
+  box-shadow: 0 0 10px aqua;
+
+}
+
+#projects {
+  background: url(assets/background.png);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+}
+.projects-content h1 {
+  text-align: center;
+  text-transform: capitalize;
+  color: #0ef;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.major-projects {
+  width: 100vw;
+  height: 50vh;
+  padding: 40px 20px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.major-projects > div {
+  height: 300px;
+  width: 400px;
+ 
+  background-color: aquamarine;
+}
