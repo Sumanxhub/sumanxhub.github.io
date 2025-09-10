@@ -1,47 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <title>Portfolio</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suman Bhaskar — Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Suman Bhaskar — Software Engineer. Frontend developer, projects: PresenSee, Cybersecurity Quiz App."
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  <body>
-    <header>
-      <a href="#" id="logo">suman</a>
-      <nav class="navbar">
-        <a href="#">home</a>
-        <a href="#">projects</a>
-        <a href="#">skills</a>
-        <a href="#">about</a>
-      </nav>
+  <body class="dark">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero">Suman Bhaskar</a>
+
+        <nav class="nav" id="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="actions">
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i data-feather="moon"></i>
+          </button>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
     </header>
-    <section id="home">
-      <div class="home-content">
-        <h3>hello, I'm</h3>
-        <h1>suman bhaskar</h1>
-        <h3>and I'm a <span class="work"></span>
-        </h3>
-        <p>
-          I'm a web developer with extensive experience for over 2 years. <br />
-          expertise is to creae web designs, frontend design.
-        </p>
-        <div class="social-handle">
-          <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"> <i class="fa-brands fa-github"></i></a>
-          <a href="#"> <i class="fa-brands fa-youtube"></i></a>
-          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-          <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
-        </div>        
-        <div class="share-info">
-          <a href="#">Resume <i class="fa-solid fa-file-arrow-down"></i></a>
-          <a href="#">Contact Me!<i class="fa-solid fa-envelope"></i></a>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Suman Bhaskar</h1>
+          <p class="sub">Software Developer · Problem Solver</p>
+          <p class="lead">
+            I am a Linux enthusiast and problem solver, passionate about solving
+            problems through code. Skilled in C++, Java, and SQL with a strong
+            grasp of OOP and database concepts, I enjoy applying structured
+            thinking to both code and systems.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn solid" href="assets/suman_resume.pdf" download>
+              <i data-feather="download"></i> Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <script src="script.js"></script>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I’m a Software Developer with experience in C++, Java, and SQL, and I
+          enjoy applying these tools to real-world challenges. I like breaking
+          down complex problems into smaller, manageable pieces and solving them
+          using structured approaches. My experience with DSA in C++ and Java
+          has strengthened this mindset over time. Beyond coding, I’m curious by
+          nature and love experimenting with Linux — customizing, optimizing,
+          and pushing its boundaries to build efficient and personalized
+          workflows.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="skills-grid">
+        <li>C, C++</li>
+        <li>Java (J2SE)</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vite, Tailwind CSS</li>
+        <li>MySQL</li>
+        <li>Git / GitHub</li>
+        <li>Linux</li>
+        <li>DSA, RDBMS, Operating Systems</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Frontend Developer Intern — Glocal View, Noida</h3>
+        <span class="meta">March 2025 – April 2025</span>
+        <ul>
+          <li>Built UI components using React, Vite and Tailwind CSS.</li>
+          <li>Implemented authentication with Formik validation.</li>
+          <li>Integrated APIs and managed state using Redux.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project card">
+          <h3>PresenSee — Face Recognition Attendance System</h3>
+          <p>
+            Attendance system using face recognition to identify users and
+            prevent duplicates.
+          </p>
+          <p><strong>Tools:</strong> Python, OpenCV</p>
+          <a
+            class="btn-small"
+            href="https://github.com/Sumanxhub/PresenSee/"
+            target="_blank"
+            rel="noopener"
+            >Source</a
+          >
+        </article>
+        <article class="project card">
+          <h3>Cybersecurity Quiz App</h3>
+          <p>
+            Responsive web-based quiz platform for cybersecurity awareness with
+            scoring and feedback.
+          </p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+          <a
+            class="btn-small"
+            href="https://github.com/Sumanxhub/Cybersecurity-Quiz-App"
+            target="_blank"
+            rel="noopener"
+            >Source</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="card">
+          <h3>B.Tech — Computer Science</h3>
+          <p>Bansal Institute of Science and Technology, Bhopal</p>
+          <p>2022 – 2026 (CGPA: 6.73 till 6th semester)</p>
+        </div>
+        <div class="card">
+          <h3>Class XII</h3>
+          <p>Shri Sitaram Harijan College, Bihar</p>
+          <p>2020 – 2022 (74.4%)</p>
+        </div>
+        <div class="card">
+          <h3>Class X</h3>
+          <p>St. Dominic Savio’s High School, Patna</p>
+          <p>2019 – 2020 (63%)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section container">
+      <h2>Certifications</h2>
+      <div class="card">
+        <ul class="cert-list">
+          <li>
+            SQL and Relational Databases 101 — IBM Developer Skills Network
+          </li>
+          <li>IoT-Network Specialist — Reliance Foundation Skilling Academy</li>
+          <li>Cloud Computing — NPTEL</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <form
+          id="contact-form"
+          class="contact-form card"
+          onsubmit="return handleContactSubmit(event)"
+        >
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Hi Suman, I'd like to talk about..."
+            required
+          ></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <a class="btn btn-outline" href="mailto:bhaskarsuman458@gmail.com"
+              >Email directly</a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> Suman Bhaskar — Built with ❤️</small>
+        <nav class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="assets/my_resume.pdf" download>Resume</a>
+          <a href="https://github.com/Sumanxhub" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/suman-bhaskar-a2379425b"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <script>
+      feather.replace(); // activate feather icons
+    </script>
   </body>
 </html>
